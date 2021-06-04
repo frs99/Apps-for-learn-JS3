@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+@media (max-width:900px){
+    .btn{
+        display: block;
+        width: 100%;
+    }
+    .tag{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .all-tags{
+        display: block;
+    }
+    .btn:hover{
+        background-color: #0f6dfb;
+        border: solid 1px #0f6dfb;
+        color: #fff;
+    }
+    .delete:hover{
+        background-color: #dc3545;
+        border: solid 1px #dc3545;
+        color: #fff;
+    }
+}

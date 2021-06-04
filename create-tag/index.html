@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FrsCodes - create tags</title>
+
+<!-- bootstrap -->
+<!-- EN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<!---------------------------->
+
+<!-- RESPONSIVE -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/media.css" rel="stylesheet" type="text/css">
+<!---------------------------->
+
+</head>
+<body>
+   <section>
+      <div class="form-floating">
+         <input type="text" class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></input>
+         <label for="floatingTextarea">Enter your tag here</label>
+         </div>
+         <div class="button">
+            <button type="button" class="btn btn-primary add" id="liveToastBtn">Add</button>
+            <button type="button" class="btn btn-danger delete">Delete</button>
+         </div>
+      </section>
+      <section class="allalert">
+         <div class="alert alert-danger alertNote" role="alert">
+            Error #1: You must enter a valid value - letters or numbers
+         </div>
+         <div class="alert alert-danger alertNote" role="alert">
+            Error #2: It appears that the value you entered does not already exist
+         </div>
+      </section>
+      <section class="all-tags">
+         <!--<div class="tag">fares</div>-->
+         
+      </section>
+   
+   <!-- JS -->
+   <script src="js/script.js"></script>
+   <!-- bootstrap -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+   <!---------------------------->
+</body>
+</html>
