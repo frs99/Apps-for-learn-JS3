@@ -1,5 +1,5 @@
 //educational training
-//Fares Djefaflia - @ FrsCodes
+//Fares Djefaflia - @FrsCodes
 //jun 4 2021
 
 var data, btnAdd, btnDelete, allTags, listTags;
