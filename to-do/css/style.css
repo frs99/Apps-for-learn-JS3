@@ -121,17 +121,15 @@ main {
   height: calc(100% - 70px);
 }
 main aside {
-  position: absolute;
-  left: -100%;
   border-right: solid 1px #ededed;
   height: 100%;
   max-width: 300px;
-  transition: all 0.3s;
-  width: 20%;
+  transition: all 0.4s;
+  width:0;
+  overflow: hidden;
 }
 main .show-aside{
-  left: 0;
-  position: relative;
+  width: 20%;
 }
 main aside .all-ul {
   width: 75%;
@@ -157,6 +155,10 @@ main aside .all-ul ul li {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s;
+  font-size: 0;
+}
+main aside .all-ul ul .li-hide{
+  font-size:18px;
 }
 main aside .all-ul ul li:hover {
   background-color: #cce7e1;
@@ -170,14 +172,14 @@ main section {
   transition: all 0.4s;
   position: relative;
 }
-main section div{
+main section .box-task{
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
-  background-color: #1b4965;
   width: 90%;
-  height: 500px;
+  height:90%;
+  background-color: #1b4965;
 }
