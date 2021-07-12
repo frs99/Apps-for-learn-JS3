@@ -121,7 +121,6 @@ main {
   height: calc(100% - 70px);
 }
 main aside {
-  border-right: solid 1px #ededed;
   height: 100%;
   max-width: 300px;
   transition: all 0.4s;
@@ -130,6 +129,7 @@ main aside {
 }
 main .show-aside{
   width: 20%;
+  border-right: solid 1px #ededed;
 }
 main aside .all-ul {
   width: 75%;
@@ -179,7 +179,77 @@ main section .box-task{
   left: 0;
   right: 0;
   margin: auto;
-  width: 90%;
+  width:98%;
+  max-width: 1600px;
   height:90%;
-  background-color: #1b4965;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* BOXS TASKS */
+main section .box-task article{
+  width: 30%;
+  max-width:350px;
+  height:90%;
+  max-height: 500px;
+  border-radius: 8px;
+}
+main section .box-task article .top-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+main section .box-task article .top-box .top-box-title{
+  display: flex;
+}
+main section .box-task article .top-box .top-box-title i{
+  margin-left:5px;
+}
+main section .box-task article .top-box .number-tasks{
+  background-color: #fff;
+  color: #1b4965;
+  border: solid 1px #1b4965;
+  border-radius: 5px;
+  padding:2px 6px;
+}
+main section .box-task article .all-task{
+  position: relative;
+  padding:10px;
+}
+main section .box-task article .all-task ul li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:6.5px;
+  margin-bottom:8px;
+  border-radius: 7px;
+}
+main section .box-task article .add-task{
+  padding:5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 7px;
+  font-size:25px;
+  cursor: pointer;
+}
+/* BOX TODO */
+main section .box-task .box-todo{
+  border: solid 1px #f8ccd1;
+}
+main section .box-task .box-todo .to-do-top-box-color{
+  background-color:#f8ccd1;
+}
+main section .box-task .box-todo .add-task-todo{
+  border: dotted 2px #e4707c;
+  color: #e4707c;
+}
+main section .box-task .box-todo ul .task-todo{
+  border: solid 2px #e4707c;
+  color: #e4707c;
 }
