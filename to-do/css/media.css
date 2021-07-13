@@ -3,7 +3,37 @@
 
 }
 @media (max-width:992px){
-
+    header .all-header{
+        width: 90%;
+    }
+    header .all-header .search{
+        width: auto;
+    }
+    main{
+        display: block;
+    }
+    main .show-aside{
+        width: 100%;
+        position: absolute;
+        background-color: #fff;
+        z-index: 999;
+        max-width: 100%;
+        border-bottom: solid 1px #ededed;
+    }
+    main aside{
+        height:calc(100% - 70px);
+        position: absolute;
+        transition: all 0.3s;
+        background-color: #fff;
+        z-index: 999;
+    }
+    main section .box-task{
+        display: block;
+    }
+    main section .box-task article{
+        width: 90%;
+        margin: 20px auto;
+    }
 }
 @media (max-width:768px){
 

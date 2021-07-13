@@ -227,6 +227,7 @@ main section .box-task article .all-task ul li{
   padding:6.5px;
   margin-bottom:8px;
   border-radius: 7px;
+  font-weight: bold;
 }
 main section .box-task article .add-task{
   padding:5px;
