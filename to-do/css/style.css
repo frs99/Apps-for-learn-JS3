@@ -202,6 +202,7 @@ main section .box-task article .top-box{
   padding:10px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  color: #1b4965;
 }
 main section .box-task article .top-box .top-box-title{
   display: flex;
@@ -253,4 +254,35 @@ main section .box-task .box-todo .add-task-todo{
 main section .box-task .box-todo ul .task-todo{
   border: solid 2px #e4707c;
   color: #e4707c;
+}
+
+/* BOX DOING */
+main section .box-task .box-doing{
+  border: solid 1px #fbeecc;
+}
+main section .box-task .box-doing .doing-top-box-color{
+  background-color:#fbeecc;
+}
+main section .box-task .box-doing .add-task-doing{
+  border: dotted 2px #f2c85b;
+  color: #f2c85b;
+}
+main section .box-task .box-doing ul .task-doing{
+  border: solid 2px #f2c85b;
+  color: #f2c85b;
+}
+/* BOX DOING */
+main section .box-task .box-done{
+  border: solid 1px #dcf1fe;
+}
+main section .box-task .box-done .done-top-box-color{
+  background-color:#dcf1fe;
+}
+main section .box-task .box-done .add-task-done{
+  border: dotted 2px #70cac0;
+  color: #70cac0;
+}
+main section .box-task .box-done ul .task-done{
+  border: solid 2px #70cac0;
+  color: #70cac0;
 }
