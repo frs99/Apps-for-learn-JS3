@@ -11,6 +11,7 @@
     }
     main{
         display: block;
+        height: auto;
     }
     main .show-aside{
         width: 100%;
@@ -28,11 +29,16 @@
         z-index: 999;
     }
     main section .box-task{
+        position: static;
         display: block;
+        height: auto;
     }
     main section .box-task article{
         width: 90%;
-        margin: 20px auto;
+        margin:30px auto;
+    }
+    .show-box-data{
+        width:85%;
     }
 }
 @media (max-width:768px){
