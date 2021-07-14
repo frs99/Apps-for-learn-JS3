@@ -3,6 +3,12 @@
 
 }
 @media (max-width:992px){
+    html{
+        height: auto;
+    }
+    body{
+        height:auto;
+    }
     header .all-header{
         width: 90%;
     }
@@ -36,6 +42,7 @@
     main section .box-task article{
         width: 90%;
         margin:30px auto;
+        min-height: 500px;
     }
     .show-box-data{
         width:85%;

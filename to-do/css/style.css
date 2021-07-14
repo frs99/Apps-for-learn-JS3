@@ -56,6 +56,8 @@ input:focus {
 @-moz-document url-prefix() {
 }
 /**********************/
+html{height: 100%;}
+body{height: 100%;}
 header {
   height: 70px;
   width: 100%;
@@ -112,7 +114,7 @@ main {
   width: 100%;
   max-width: 4000px;
   margin: 0 auto;
-  /* height: calc(100% - 70px); */
+  height: calc(100% - 70px);
 }
 main aside {
   height: 100%;
@@ -150,6 +152,7 @@ main aside .all-ul ul li {
   cursor: pointer;
   transition: all 0.3s;
   font-size: 0;
+  user-select: none;
 }
 main aside .all-ul ul .li-hide{
   font-size:18px;
@@ -188,7 +191,6 @@ main section .box-task article{
   max-width:350px;
   height:90%;
   max-height: 500px;
-  min-height: 500px;
   border-radius: 8px;
 }
 main section .box-task article .top-box{
@@ -269,10 +271,10 @@ main section .box-task .box-doing ul .task-doing{
 }
 /* BOX DOING */
 main section .box-task .box-done{
-  border: solid 1px #dcf1fe;
+  border: solid 1px #b8f8f1;
 }
 main section .box-task .box-done .done-top-box-color{
-  background-color:#dcf1fe;
+  background-color:#b8f8f1;
 }
 main section .box-task .box-done .add-task-done{
   border: dotted 2px #70cac0;
@@ -288,14 +290,19 @@ main section .box-task .box-done ul .task-done{
 
 .box-data{
   width:0;
+  max-width: 500px;
   overflow: hidden;
   height: auto;
-  position: absolute;
+  /* position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;
+  margin: auto; */
+  position: fixed;
+  top: 100%;
+  left: -100%;
+  transform:translate(-50%,-50%);
   background-color: #fff;
   height:247px;
   border-radius: 8px;
@@ -304,6 +311,9 @@ main section .box-task .box-done ul .task-done{
 }
 .show-box-data{
   width: 50%;
+  top: 50%;
+  left: 50%;
+  
   border: solid 1px #ededed;
 }
 .filter{
@@ -321,7 +331,9 @@ main section .box-task .box-done ul .task-done{
   color: #ff5e5e;
   font-size: 26px;
   float: right;
-  margin-top: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  height:27px;
 }
 .box-data .box-input input{
   border: solid 2px #1b4965;
