@@ -227,6 +227,13 @@ main section .box-task article .all-task ul li{
   margin-bottom:8px;
   border-radius: 7px;
   font-weight: bold;
+  position: relative;
+}
+main section .box-task article .all-task ul li i{
+  padding: 3px;
+  border-radius:3px;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 main section .box-task article .add-task{
   padding:5px;
@@ -237,6 +244,70 @@ main section .box-task article .add-task{
   border-radius: 7px;
   font-size:25px;
   cursor: pointer;
+}
+
+/* OP */
+
+main section .box-task article .all-task ul li .op-task{
+  width:0;
+  height:0;
+  background-color: #fff;
+  position: absolute;
+  top: 25px;
+  right:0;
+  border-radius: 5px;
+  z-index:1;
+  overflow: hidden;
+}
+main section .box-task article .all-task ul li .show-op-task{
+  width:200px;
+  height:auto;
+  right:-190px;
+}
+main section .box-task article .all-task ul li .op-task ul {
+  padding:10px;
+}
+main section .box-task article .all-task ul li .op-task ul li{
+  padding:0;
+  padding-bottom:15px;
+  margin: 0;
+  cursor: pointer;
+}
+main section .box-task article .all-task ul li .op-task .li-op{
+  justify-content: flex-start;
+  user-select: none;
+  cursor: pointer;
+}
+main section .box-task article .all-task ul li .op-task .li-op i{
+  margin-right: 8px;
+}
+main section .box-task article .all-task ul li .op-task .to-todo{
+  color: #1b4965;
+  text-align: center;
+  background-color: #f8ccd1;
+  display: block;
+  padding: 2px 0;
+  border-radius:3px;
+  width:100%;
+}
+main section .box-task article .all-task ul li .op-task .to-doing{
+  color: #1b4965;
+  text-align: center;
+  background-color:#fbeecc;
+  display: block;
+  padding: 2px 0;
+  border-radius:3px;
+  margin:10px 0;
+  width:100%;
+}
+main section .box-task article .all-task ul li .op-task .to-done{
+  color: #1b4965;
+  text-align: center;
+  background-color: #b8f8f1;
+  display: block;
+  padding: 2px 0;
+  border-radius:3px;
+  width:100%;
 }
 /* BOX TODO */
 main section .box-task .box-todo{
@@ -252,6 +323,10 @@ main section .box-task .box-todo .add-task-todo{
 main section .box-task .box-todo ul .task-todo{
   border: solid 2px #e4707c;
   color: #e4707c;
+}
+main section .box-task .box-todo ul li  i:hover{background-color:#f8ccd1;}
+.op-todo{
+  border: solid 1px #e4707c;
 }
 
 /* BOX DOING */
@@ -293,12 +368,6 @@ main section .box-task .box-done ul .task-done{
   max-width: 500px;
   overflow: hidden;
   height: auto;
-  /* position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto; */
   position: fixed;
   top: 100%;
   left: -100%;

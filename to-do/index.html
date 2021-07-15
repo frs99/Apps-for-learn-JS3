@@ -80,25 +80,25 @@
               </div>
             </div>
             <div class="all-task">
-              <ul>
+              <ul class="list-todo">
                 <li class="task-todo">
-                  <p>learn js</p>
+                  <p class="data-n">learn js</p>
                   <i class="fas fa-ellipsis-h"></i>
-                </li>
-
-                <li class="task-todo">
-                  <p>learn js</p>
-                  <i class="fas fa-ellipsis-h"></i>
-                </li>
-
-                <li class="task-todo">
-                  <p>learn js</p>
-                  <i class="fas fa-ellipsis-h"></i>
-                </li>
-
-                <li class="task-todo">
-                  <p>learn js</p>
-                  <i class="fas fa-ellipsis-h"></i>
+                  <div class="op-task">
+                    <ul>
+                      <li class="li-op">
+                        <i class="fas fa-edit"></i>
+                        <p>Rename</p>
+                      </li>
+                      <li class="li-op">
+                        <i class="fas fa-trash-alt edit-todo"></i>
+                        <p>Delete</p>
+                      </li>
+                      <li class="to-todo">To Do</li>
+                      <li class="to-doing">Doing</li>
+                      <li class="to-done">Done</li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
               <div class="add-task add-task-todo">
@@ -107,7 +107,7 @@
             </div>
           </article>
 
-          <!-- BOX01 - DOING -->
+          <!-- BOX02 - DOING -->
           <article class="box-doing">
             <div class="top-box doing-top-box-color">
               <div class="top-box-title">
@@ -130,7 +130,8 @@
               </div>
             </div>
           </article>
-          <!-- BOX01 - DONE -->
+
+          <!-- BOX03 - DONE -->
           <article class="box-done">
             <div class="top-box done-top-box-color">
               <div class="top-box-title">
@@ -158,8 +159,8 @@
     <section class="box-data">
       <div class="box-input">
         <i class="fas fa-times-circle"></i>
-        <input type="text" placeholder="Enter task">
-        <button type="button">Save</button>
+        <input type="text" placeholder="Enter task" class="data">
+        <button type="button" class="save-task">Save</button>
       </div>
     </section>
     <!-- JS -->

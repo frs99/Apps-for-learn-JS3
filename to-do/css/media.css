@@ -47,6 +47,9 @@
     .show-box-data{
         width:85%;
     }
+    main section .box-task article .all-task ul li .show-op-task{
+        right: 0;
+    }
 }
 @media (max-width:768px){
 
