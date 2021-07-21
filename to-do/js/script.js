@@ -82,6 +82,7 @@ addTodo.onclick = function(){
 
 
 // FOR ADD TASK - DOING
+var listDoing = document.querySelector(".list-doing");
 addDoing.onclick = function(){
   boxData.classList.toggle("show-box-data");
   main[0].classList.toggle("filter");
@@ -90,11 +91,72 @@ addDoing.onclick = function(){
   var savTaskDoing = document.getElementById("fordoing");
   data.value = "";
 
-  savTaskDoing.onclick = function(){};
+  //FOR CREATE NEW TODO
+  savTaskDoing.onclick = function(){
+    var newLi = document.createElement("li");
+    listDoing.appendChild(newLi);
+    newLi.classList.add("task-doing");
+
+    var nameTask = document.createElement("p");
+    newLi.appendChild(nameTask);
+
+
+    nameTask.textContent = data.value;
+
+    var icon = document.createElement("i");
+    newLi.appendChild(icon);
+    icon.classList.add("fas", "fa-trash", "btn-delete");
+
+    boxData.classList.toggle("show-box-data");
+    main[0].classList.toggle("filter");
+
+    // FOR DELETE TASK TODO
+    var btnDeleteDoing = document.getElementsByClassName("btn-delete");
+    for (iBtnDoing = 0; iBtnDoing < btnDeleteDoing.length; iBtnDoing++){
+      btnDeleteDoing[iBtnDoing].onclick = function(){
+        this.parentNode.remove();
+      };
+    };
+  };
 }
+
+// FOR ADD TASK - DONE
+var listDone = document.querySelector(".list-done");
 addDone.onclick = function(){
   boxData.classList.toggle("show-box-data");
   main[0].classList.toggle("filter");
+
+  btnsavTask.setAttribute("id", "fordone");
+  var savTaskDone = document.getElementById("fordone");
+  data.value = "";
+
+  //FOR CREATE NEW TODO
+  savTaskDone.onclick = function(){
+    var newLi = document.createElement("li");
+    listDone.appendChild(newLi);
+    newLi.classList.add("task-done");
+
+    var nameTask = document.createElement("p");
+    newLi.appendChild(nameTask);
+
+
+    nameTask.textContent = data.value;
+
+    var icon = document.createElement("i");
+    newLi.appendChild(icon);
+    icon.classList.add("fas", "fa-trash", "btn-delete");
+
+    boxData.classList.toggle("show-box-data");
+    main[0].classList.toggle("filter");
+
+    // FOR DELETE TASK TODO
+    var btnDeleteDone = document.getElementsByClassName("btn-delete");
+    for (iBtnDone = 0; iBtnDone < btnDeleteDone.length; iBtnDone++){
+      btnDeleteDone[iBtnDone].onclick = function(){
+        this.parentNode.remove();
+      };
+    };
+  };
 }
 closeData.onclick = function(){
   boxData.classList.toggle("show-box-data");
@@ -114,9 +176,9 @@ closeData.onclick = function(){
     // crboxOp.classList.add("op-task");
     // var crUl = document.createElement("ul");
     // crboxOp.appendChild(crUl);
-    
 
-    
+
+
     // //CREAT BTN RENAME
     // var rnm = document.createElement("li");
     // crUl.appendChild(rnm);
