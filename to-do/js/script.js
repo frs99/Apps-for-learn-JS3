@@ -29,6 +29,9 @@ var boxData = document.querySelector(".box-data");
 var main = document.getElementsByTagName("main");
 var btnsavTask = document.querySelector(".save-task");
 var data = document.querySelector(".data");
+var numTodo = document.querySelector('.num-todo');
+var numDoing = document.querySelector('.num-doing');
+var numDone = document.querySelector('.num-done');
 
 // function addTask(){
 //   boxData.classList.toggle("show-box-data");
@@ -65,19 +68,18 @@ addTodo.onclick = function(){
 
     boxData.classList.toggle("show-box-data");
     main[0].classList.toggle("filter");
+    numTodo.textContent = listTodo.children.length;
 
     // FOR DELETE TASK TODO
     var btnDeleteTodo = document.getElementsByClassName("btn-delete");
     for (iBtnTodo = 0; iBtnTodo < btnDeleteTodo.length; iBtnTodo++){
       btnDeleteTodo[iBtnTodo].onclick = function(){
         this.parentNode.remove();
+        numTodo.textContent = listTodo.children.length;
       };
     };
   };
 };
-
-
-
 
 
 
@@ -109,12 +111,13 @@ addDoing.onclick = function(){
 
     boxData.classList.toggle("show-box-data");
     main[0].classList.toggle("filter");
-
+    numDoing.textContent = listDoing.children.length;
     // FOR DELETE TASK TODO
     var btnDeleteDoing = document.getElementsByClassName("btn-delete");
     for (iBtnDoing = 0; iBtnDoing < btnDeleteDoing.length; iBtnDoing++){
       btnDeleteDoing[iBtnDoing].onclick = function(){
         this.parentNode.remove();
+        numDoing.textContent = listDoing.children.length;
       };
     };
   };
@@ -148,12 +151,13 @@ addDone.onclick = function(){
 
     boxData.classList.toggle("show-box-data");
     main[0].classList.toggle("filter");
-
+    numDone.textContent = listDone.children.length;
     // FOR DELETE TASK TODO
     var btnDeleteDone = document.getElementsByClassName("btn-delete");
     for (iBtnDone = 0; iBtnDone < btnDeleteDone.length; iBtnDone++){
       btnDeleteDone[iBtnDone].onclick = function(){
         this.parentNode.remove();
+        numDone.textContent = listDone.children.length;
       };
     };
   };
@@ -162,8 +166,6 @@ closeData.onclick = function(){
   boxData.classList.toggle("show-box-data");
   main[0].classList.toggle("filter");
 }
-
-
 
 
 
