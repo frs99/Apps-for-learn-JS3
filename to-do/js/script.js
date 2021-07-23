@@ -1,4 +1,4 @@
-
+//CLOSE
 // FOR NAVBAR
 
 var btnNavbar = document.querySelector(".icon-resp");
