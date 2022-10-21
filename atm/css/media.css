@@ -1,0 +1,11 @@
+@media (max-width:600px){
+  form{
+    width: 100%;
+  }
+  .user, .pass, .login{
+    width:90%;
+  }
+  .swal2-container.swal2-center>.swal2-popup{
+    width: 80% !important;
+  }
+}

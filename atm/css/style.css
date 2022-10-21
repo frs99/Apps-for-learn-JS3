@@ -1,0 +1,262 @@
+*{
+  padding: 0px;
+  margin: 0px; 
+  box-sizing: border-box; 
+  list-style:none;
+  text-decoration: none;
+  -webkit-tap-highlight-color:transparent;
+  font-family: 'Poppins', sans-serif;
+}
+/* placeholder color */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #e07b5fad;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #e07a5f;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #e07a5f;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #e07a5f;
+} 
+
+html{
+  scroll-behavior: smooth;
+} 
+input:focus{
+  outline: none;
+}
+img {
+  pointer-events: none;
+}
+a{
+  user-select: none;
+}
+body{
+  background-color: #3d405b;
+}
+.p-c { /* object to centre with position absolute */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+/* LOGIN */
+form input{
+  padding:8px 5px;
+  width:100%;
+  border: none;
+  color: #e07a5f;
+  background-color: #fbdfd7;
+  font-size: 16px;
+  font-weight: 500;
+}
+form i{
+  font-size: 20px;
+  margin-right:10px;
+}
+.user, .pass, .login, .amount, .pull{
+  padding: 0 10px;
+  width:400px;
+  display: flex;
+  align-items: center;
+  color:#e07a5f;
+  margin: 30px auto;
+  height:50px;
+  border: solid #e07a5f 2px;
+  border-radius:5px;
+  background-color: #fbdfd7;
+}
+.login, .pull, .pull input, .login input{
+  background-color: #e07a5f;
+  color: #fff;
+  border: #e07a5f;
+  cursor: pointer;
+}
+/*  END  */
+section{
+  padding-top:50px;
+  width:70%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.txt p{
+  font-size:100px;
+  color: #fff;
+}
+.txt div{
+  position: relative;
+  top:-55px;
+  width:450px;
+  height:30px;
+  background-color: rgba(255, 255, 255, 0.281);
+}
+.own{
+  text-align: center;
+  color: #fff;
+  font-size:90px;
+}
+
+.box-pull{
+  width:93%;
+  max-width: 880px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 15px;
+  justify-content: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #fff;
+  margin:0 auto;
+  height: auto;
+  padding:50px;
+}
+
+
+/* BOX MONEY */
+/*1000*/
+.m-1000{
+  width:250px;
+  border: solid 3px #3d405b;
+  border-radius:8px;
+  color: #3d405b;
+  padding: 15px 0;
+  background-color: #c1c3d6;
+}
+.m-1000 h1{
+  font-size:30px;
+  margin: 0 15px;
+}
+.m-1000 .m-bx{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.m-1000 .m-bx div{
+  width:100%;
+  height:30px;
+  background-color:#3d405b;
+}
+
+/*500*/
+.m-500{
+  width:250px;
+  border: solid 3px #3d5b42;
+  border-radius:8px;
+  color: #3d5b42;
+  padding: 15px 0;
+  background-color: #c8decc;
+}
+.m-500 h1{
+  font-size:30px;
+  margin: 0 15px;
+}
+.m-500 .m-bx{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.m-500 .m-bx div{
+  width:100%;
+  height:30px;
+  background-color:#3d5b42;
+}
+
+/*100*/
+.m-100{
+  width:250px;
+  border: solid 3px #5b593d;
+  border-radius:8px;
+  color: #5b593d;
+  padding: 15px 0;
+  background-color: #d1cd9a;
+}
+.m-100 h1{
+  font-size:30px;
+  margin: 0 15px;
+}
+.m-100 .m-bx{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.m-100 .m-bx div{
+  width:100%;
+  height:30px;
+  background-color:#5b593d;
+}
+
+/*10*/
+.m-10{
+  width:250px;
+  border: solid 3px #533d5b;
+  border-radius:8px;
+  color: #533d5b;
+  padding: 15px 0;
+  background-color: #e7cef1;
+}
+.m-10 h1{
+  font-size:30px;
+  margin: 0 15px;
+}
+.m-10 .m-bx{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.m-10 .m-bx div{
+  width:100%;
+  height:30px;
+  background-color:#533d5b;
+}
+
+/*1*/
+.m-1{
+  width:250px;
+  border: solid 3px #5b3f3d;
+  border-radius:8px;
+  color: #5b3f3d;
+  padding: 15px 0;
+  background-color: #f6b1ac;
+}
+.m-1 h1{
+  font-size:30px;
+  margin: 0 15px;
+}
+.m-1 .m-bx{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.m-1 .m-bx div{
+  width:100%;
+  height:30px;
+  background-color:#5b3f3d;
+}
+
+/* SWAL2 */
+/* THANKS: https://sweetalert2.github.io/ */
+
+.swal2-container.swal2-center>.swal2-popup{
+  border: solid 3px #e07a5f !important;
+  border-radius:10px !important;
+}
+.swal2-styled.swal2-confirm{
+  background-color: #e07a5f !important;
+} .swal2-styled.swal2-confirm:focus{box-shadow: none !important;}
+.swal2-title, .swal2-html-container{
+  color: #3d405b !important;
+}
+
+
+.my-name{
+  color: #e07a5f;
+  text-align: center;
+}
